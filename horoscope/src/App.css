@@ -1,0 +1,153 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes color {
+  form {
+    color: rgb(61, 116, 179);
+  }
+
+  20% {
+    color: rgb(39, 84, 136);
+  }
+
+  40% {
+    color: rgb(87, 61, 179);
+  }
+
+  60% {
+    color: rgb(142, 61, 179);
+  }
+
+  80% {
+    color: rgb(179, 61, 150);
+  }
+
+  to {
+    color: rgb(109, 36, 91);
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.inputNumber{
+  width: 100px;
+  height: 40px;
+  font-size: large;
+  text-align: center;
+  margin-left: 2px;
+}
+
+.inputTime{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+h3{
+  margin-bottom: 2px;
+}
+
+
+.pagehide{
+  display: none;
+}
+
+h3{
+  margin-top: 8px;
+}
+
+#submit{
+  background-color: rgb(69, 69, 223);
+  color: white;
+  font-size: 20px;
+  height: 40px;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+.horoHead{
+  font-family: 'Beau Rivage', cursive;
+  font-size: 55px;
+  animation: color 2.5s infinite ease-in-out alternate;;
+}
+
+#back{
+  background-color: rgb(59, 59, 84);
+  color: white;
+  font-size: 20px;
+  height: 40px;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+#back:hover{
+  background-color: rgb(84, 84, 139);
+}
+
+#submit:hover{
+  background-color: rgb(52, 52, 215);
+}
+
+.horoscope-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.horoscope{
+  border: 1px solid red;
+  min-width: 300px;
+  padding: 20px;
+  margin: 10px;
+}
